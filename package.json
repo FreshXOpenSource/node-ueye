@@ -1,6 +1,6 @@
 {
   "name": "ueye",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Binding for IDS uEye camera library",
   "main": "index.js",
   "dependencies": {
