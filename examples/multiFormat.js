@@ -1,12 +1,4 @@
-node-ueye
-=========
-Unoffical Node.js Binding for uEye Camera-Library from [Imaging Development Systems GmbH](https://de.ids-imaging.com/home.html)
-
-synopsis
---------
-
-``` js
-const ueye = require('./index');
+const ueye = require('../index');
 const path = require('path');
 const async = require('async');
 
@@ -53,11 +45,3 @@ return ueye.initalize((err, cam) => {
         });
     });
 });
-```
-
-installation
-------------
-
-``` bash
-  $ npm install ueye
-```
