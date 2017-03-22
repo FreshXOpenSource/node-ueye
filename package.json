@@ -8,6 +8,8 @@
     "nan": "^2.5.1"
   },
   "repository": {
+    "type": "git",
+    "url": "https://github.com/FreshXOpenSource/node-ueye.git"
   },
   "devDependencies": {},
   "scripts": {
