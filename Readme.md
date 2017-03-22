@@ -6,7 +6,7 @@ synopsis
 --------
 
 ``` js
-const ueye = require('./index');
+const ueye = require('ueye');
 const path = require('path');
 const async = require('async');
 
