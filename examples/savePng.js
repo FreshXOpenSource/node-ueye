@@ -1,11 +1,3 @@
-node-ueye
-=========
-Unoffical Node.js Binding (FFI-based) for uEye Camera-Library from [Imaging Development Systems GmbH](https://de.ids-imaging.com/home.html)
-
-synopsis
---------
-
-``` js
 const Camera = require('../lib/camera');
 const co = require('co');
 const fs = require('fs');
@@ -55,11 +47,3 @@ co(function *() {
         process.exit();
     });
 });
-```
-
-installation
-------------
-
-``` bash
-  $ npm install ueye
-```
