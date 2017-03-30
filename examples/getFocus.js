@@ -1,10 +1,9 @@
 const Camera = require('../lib/camera');
 const co = require('co');
-const fs = require('fs');
 
 const cam = new Camera();
 
-co(function *() {
+co(function* () {
     console.log('Initialize cam');
     yield cam.init();
     console.log('Initialized');
@@ -31,7 +30,7 @@ co(function *() {
 
     yield cam.exit();
 }).catch(() => {
-    cam.exit().then(()=>{
+    cam.exit().then(() => {
         process.exit();
     });
 });
