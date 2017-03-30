@@ -87,7 +87,7 @@ bindings and defines
 
 The [ffi](https://github.com/node-ffi/node-ffi)-bindings are directly accessible via the binding attribute of the Camera class. For many library functions exist a convenient wrapper-function. If not, you can access the functions directly via the binding attribute.
 
-Let's implement a call to the native [is_GetColorDepth](https://en.ids-imaging.com/manuals/uEye_SDK/EN/uEye_Manual_4.82/index.html?is_getcolordepth.html) function:
+Let's implement a call to the native [is_Saturation](https://en.ids-imaging.com/manuals/uEye_SDK/EN/uEye_Manual_4.82/index.html?is_saturation.html) function:
 
 ``` js
 const Camera = require('ueye');
