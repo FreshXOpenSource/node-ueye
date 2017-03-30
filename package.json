@@ -1,6 +1,6 @@
 {
   "name": "ueye",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "FFI-based Binding for IDS uEye camera library",
   "main": "lib/camera",
   "scripts": {

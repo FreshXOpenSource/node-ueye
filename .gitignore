@@ -1,6 +1,5 @@
 node_modules
-*.log*
-build
+out/*.png
 out/*.bmp
-out/*.gbr
-test.*
+out/*.jpg
+out/*.bgr
