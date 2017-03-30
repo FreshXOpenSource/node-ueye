@@ -6,7 +6,7 @@ synopsis
 --------
 
 ``` js
-const Camera = require('../lib/camera');
+const Camera = require('ueye');
 const co = require('co');
 const fs = require('fs');
 const path = require('path');
