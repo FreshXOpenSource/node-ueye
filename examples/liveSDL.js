@@ -21,8 +21,11 @@ let exiting = false;
 process.on('SIGINT', () => {
     console.log('SIGINT');
     exiting = true;
+    console.log('Stop camera');
     cam.exit(cam.NO_QUEUE).then(() => { 
+        console.log('Camera stopped. Destroy App.');
         App.quit();
+        console.log('Bye');
         process.exit();
     });
 });
@@ -42,7 +45,7 @@ co(function* (){
     yield cam.setColorMode(cam.def.IS_CM_BGR8_PACKED);
     yield cam.aoiImageSetSize(maxImageSize);
     yield cam.setDisplayMode(cam.def.IS_SET_DM_DIB);
-    const newFrameRate = yield cam.setFrameRate(3);
+    const newFrameRate = yield cam.setFrameRate(5);
  
     for(let i = 0; i < 10; i++) {
         const seq = yield cam.allocImageMem(maxImageSize, 24);
