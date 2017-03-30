@@ -1,4 +1,4 @@
-const Camera = require('./lib/camera');
+const Camera = require('../lib/camera');
 const co = require('co');
 
 const cam = new Camera();
