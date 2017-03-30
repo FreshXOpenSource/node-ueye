@@ -29,16 +29,14 @@ co(function *() {
 
     yield cam.enableEvent(cam.def.IS_SET_EVENT_FRAME);
 
-    cam.nextImage((res, done) => {
+    yield cam.nextImage((res, done) => {
         console.log('Image stored to out/test.bgr');
         fs.writeFileSync(path.join(__dirname, '../out/test.bgr'), res.pixels);
 
         return done();
-    }, () => {
-        cam.exit().then(()=>{
-            process.exit();
-        });
     });
+
+    yield cam.exit();
 }).catch(() => {
     cam.exit().then(()=>{
         process.exit();

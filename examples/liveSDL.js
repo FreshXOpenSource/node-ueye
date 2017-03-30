@@ -64,7 +64,7 @@ co(function* (){
             SDL_render.SDL_UpdateTexture(context.texture, null, res.pixels, 3 * maxImageSize.s32Width);
 
             return done();
-        }, () => {
+        }).then(() => {
             SDL_render.SDL_RenderCopyEx(render._render, context.texture, null, SDL_rect.SDL_Rect({
                 x: 0,
                 y: 0,
