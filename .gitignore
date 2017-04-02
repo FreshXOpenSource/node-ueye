@@ -3,3 +3,4 @@ out/*.png
 out/*.bmp
 out/*.jpg
 out/*.bgr
+build/*
