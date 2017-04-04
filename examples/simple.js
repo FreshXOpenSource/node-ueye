@@ -37,7 +37,9 @@ co(function* () {
     });
 
     yield cam.exit();
-}).catch(() => {
+}).catch((err) => {
+    console.log(`Error: ${err}`);
+
     cam.exit().then(() => {
         process.exit();
     });

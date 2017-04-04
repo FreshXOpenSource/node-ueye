@@ -19,6 +19,8 @@ co(function* () {
         yield cam.addToSequence(seq);
     }
 
+    yield cam.focus(cam.def.FOC_CMD_SET_DISABLE_AUTOFOCUS);
+
     yield cam.captureVideo(cam.def.IS_WAIT);
     yield cam.enableEvent(cam.def.IS_SET_EVENT_FRAME);
 
