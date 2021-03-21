@@ -1,4 +1,4 @@
-#include <uEye.h>
+#include <ueye.h>
 #include <stdlib.h>
 #include <iostream>
 #include <string>
